@@ -1,0 +1,303 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8583,        295]
+NotebookOptionsPosition[      7184,        244]
+NotebookOutlinePosition[      7528,        259]
+CellTagsIndexPosition[      7485,        256]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Calculation of limits (\[Section]3.1):", "SectionNoNumber",
+ CellChangeTimes->{3.6794826451472607`*^9}],
+
+Cell[BoxData[
+ RowBox[{"Quit", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.6794817104855804`*^9, 3.6794817118809395`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Sin", "[", "x", "]"}], "/", "x"}], ",", 
+   RowBox[{"x", "\[Rule]", "0"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.679481726466709*^9, 3.67948178587506*^9}}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{{3.679481759358207*^9, 3.6794817893009443`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{"1", "/", "k"}]}], ")"}], "^", "k"}], ",", 
+   RowBox[{"k", "\[Rule]", "Infinity"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{"2", "/", "k"}]}], ")"}], "^", "k"}], ",", 
+   RowBox[{"k", "\[Rule]", "Infinity"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "+", "x"}], ")"}], "^", 
+    RowBox[{"(", 
+     RowBox[{"1", "/", "x"}], ")"}]}], ",", 
+   RowBox[{"x", "\[Rule]", "0"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.6794818003117905`*^9, 3.6794818967207007`*^9}}],
+
+Cell[BoxData["\[ExponentialE]"], "Output",
+ CellChangeTimes->{3.679481901432917*^9}],
+
+Cell[BoxData[
+ SuperscriptBox["\[ExponentialE]", "2"]], "Output",
+ CellChangeTimes->{3.67948190144092*^9}],
+
+Cell[BoxData["\[ExponentialE]"], "Output",
+ CellChangeTimes->{3.6794819014489217`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Log", "[", 
+     RowBox[{"x", "+", "1"}], "]"}], "/", "x"}], ",", 
+   RowBox[{"x", "\[Rule]", "0"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.679481924208803*^9, 3.679481930096325*^9}}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.679481940412989*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"h", "=", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"x", "^", "2"}], "-", "1"}], ")"}], "/", 
+   RowBox[{"(", 
+    RowBox[{"x", "-", "1"}], ")"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"Limit", "[", 
+  RowBox[{"h", ",", 
+   RowBox[{"x", "\[Rule]", "3"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Limit", "[", 
+  RowBox[{"h", ",", 
+   RowBox[{"x", "\[Rule]", "a"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Limit", "[", 
+  RowBox[{"h", ",", 
+   RowBox[{"x", "\[Rule]", "1"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.6794819504195757`*^9, 3.679482002400007*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   RowBox[{"-", "1"}], "+", 
+   SuperscriptBox["x", "2"]}], 
+  RowBox[{
+   RowBox[{"-", "1"}], "+", "x"}]]], "Output",
+ CellChangeTimes->{3.6794820055538206`*^9}],
+
+Cell[BoxData["4"], "Output",
+ CellChangeTimes->{3.6794820055608225`*^9}],
+
+Cell[BoxData[
+ RowBox[{"1", "+", "a"}]], "Output",
+ CellChangeTimes->{3.679482005571826*^9}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{3.679482005581828*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"g", "=", 
+  RowBox[{
+   RowBox[{"Cos", "[", "x", "]"}], "/", 
+   RowBox[{"Exp", "[", "x", "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"Limit", "[", 
+  RowBox[{"g", ",", 
+   RowBox[{"x", "\[Rule]", "Pi"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Limit", "[", 
+  RowBox[{"g", ",", 
+   RowBox[{"x", "\[Rule]", "0"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Limit", "[", 
+  RowBox[{"g", ",", 
+   RowBox[{"x", "\[Rule]", "a"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.679482146974364*^9, 3.6794821974314003`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["\[ExponentialE]", 
+   RowBox[{"-", "x"}]], " ", 
+  RowBox[{"Cos", "[", "x", "]"}]}]], "Output",
+ CellChangeTimes->{3.679482200092087*^9}],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  SuperscriptBox["\[ExponentialE]", 
+   RowBox[{"-", "\[Pi]"}]]}]], "Output",
+ CellChangeTimes->{3.6794822000990887`*^9}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.679482200110092*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["\[ExponentialE]", 
+   RowBox[{"-", "a"}]], " ", 
+  RowBox[{"Cos", "[", "a", "]"}]}]], "Output",
+ CellChangeTimes->{3.6794822001531034`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "-", 
+      RowBox[{"Exp", "[", 
+       RowBox[{
+        RowBox[{"-", "2"}], "*", "x"}], "]"}]}], ")"}], "/", 
+    RowBox[{"(", 
+     RowBox[{"1", "-", 
+      RowBox[{"Exp", "[", 
+       RowBox[{"-", "x"}], "]"}]}], ")"}]}], ",", 
+   RowBox[{"x", "->", "0"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6794822239962645`*^9, 3.679482224000265*^9}, {
+  3.679482261772025*^9, 3.6794823652097526`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Power", "::", "infy"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Infinite expression \[NoBreak]\\!\\(\\*FractionBox[\\\"1\\\
+\", \\\"0\\\"]\\)\[NoBreak] encountered. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/infy\\\", ButtonNote -> \
+\\\"Power::infy\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.679482337829676*^9, 3.679482371970498*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Infinity", "::", "indet"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Indeterminate expression \
+\[NoBreak]\\!\\(\\*RowBox[{\\\"0\\\", \\\" \\\", \\\"ComplexInfinity\\\"}]\\)\
+\[NoBreak] encountered. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/indet\\\", ButtonNote -> \
+\\\"Infinity::indet\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.679482337829676*^9, 3.6794823720035067`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "ivar"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(\\*RowBox[{\\\"0\\\"}]\\)\[NoBreak] is not \
+a valid variable. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/ivar\\\", ButtonNote -> \
+\\\"General::ivar\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.679482337829676*^9, 3.6794823720225115`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{"Indeterminate", ",", 
+   RowBox[{"0", "\[Rule]", "0"}]}], "]"}]], "Output",
+ CellChangeTimes->{
+  3.6794822666792917`*^9, {3.6794823378846908`*^9, 3.6794823720295134`*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1050, 1045},
+WindowMargins->{{215, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.4 for Microsoft Windows (64-bit) (April 11, 2016)",
+StyleDefinitions->"Manual.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 109, 1, 65, "SectionNoNumber"],
+Cell[692, 25, 122, 2, 31, "Input"],
+Cell[CellGroupData[{
+Cell[839, 31, 232, 6, 31, "Input"],
+Cell[1074, 39, 96, 1, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1207, 45, 751, 23, 72, "Input"],
+Cell[1961, 70, 84, 1, 32, "Output"],
+Cell[2048, 73, 106, 2, 32, "Output"],
+Cell[2157, 77, 86, 1, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2280, 83, 259, 7, 31, "Input"],
+Cell[2542, 92, 70, 1, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2649, 98, 602, 17, 92, "Input"],
+Cell[3254, 117, 201, 7, 49, "Output"],
+Cell[3458, 126, 72, 1, 32, "Output"],
+Cell[3533, 129, 92, 2, 32, "Output"],
+Cell[3628, 133, 70, 1, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3735, 139, 541, 14, 92, "Input"],
+Cell[4279, 155, 179, 5, 32, "Output"],
+Cell[4461, 162, 150, 4, 32, "Output"],
+Cell[4614, 168, 70, 1, 32, "Output"],
+Cell[4687, 171, 181, 5, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4905, 181, 494, 15, 31, "Input"],
+Cell[5402, 198, 500, 10, 40, "Message"],
+Cell[5905, 210, 540, 11, 21, "Message"],
+Cell[6448, 223, 484, 10, 21, "Message"],
+Cell[6935, 235, 221, 5, 32, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
